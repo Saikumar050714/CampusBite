@@ -82,9 +82,9 @@ setInterval(() => {
   }
 }, TWENTY_FOUR_HOURS);
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`====================================================`);
-  console.log(`🚀 CampusBite Server running on http://localhost:${PORT}`);
+  console.log(`🚀 CampusBite Server running on port ${PORT}`);
   console.log(`📡 WebSocket server ready for real-time order updates`);
   console.log(`🍔 Database: SQLite (better-sqlite3)`);
   console.log(`🧹 Auto Data Purge: Orders older than 1 month deleted`);

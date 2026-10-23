@@ -1,0 +1,12 @@
+node_modules
+client/node_modules
+client/dist
+server/canteen.db
+server/canteen.db-shm
+server/canteen.db-wal
+*.db
+*.db-shm
+*.db-wal
+.git
+.gitignore
+*.docx

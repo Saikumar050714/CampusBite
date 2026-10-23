@@ -80,3 +80,21 @@ Use the switcher at the top of the app:
    - Click *Prompt Student for PIN & Handover*.
    - Enter wrong PIN (e.g. `0000`) $\rightarrow$ see error rejection.
    - Enter the student's correct PIN $\rightarrow$ order verified and archived!
+
+---
+
+## 🌐 1-Click Cloud Deployment
+
+### Option 1: Deploy on Render (Free & Recommended)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Saikumar050714/CampusBite)
+
+1. Click the **Deploy to Render** button above (or create a Web Service connected to `https://github.com/Saikumar050714/CampusBite`).
+2. Render reads [`render.yaml`](render.yaml) automatically:
+   - **Environment:** Node
+   - **Build Command:** `npm run build`
+   - **Start Command:** `npm start`
+3. Click **Create Web Service**. Your app is live with WebSockets and fullstack routing!
+
+### Option 2: Deploy with Docker / Railway
+1. Connect the GitHub repository `https://github.com/Saikumar050714/CampusBite` to Railway or any Docker host.
+2. The included [`Dockerfile`](Dockerfile) will automatically build the React frontend and run the production Express server on port 5000.
